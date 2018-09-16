@@ -10,6 +10,20 @@
           </a>
         </li>
 
+        <!-- pages -->
+        <li class="active treeview">
+          <a href="{{ route('page.index') }}">
+            <i class="fa fa-list"></i> <span>Pages</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="{{ route('page.index') }}"><i class="fa fa-circle-o"></i> All Pages</a></li>
+            <li><a href="{{ route('page.create') }}"><i class="fa fa-circle-o"></i> Add Page</a></li>
+          </ul>
+        </li>
+
         <!-- admin users -->
         <li class="active treeview">
           <a href="{{ route('user.index') }}">
