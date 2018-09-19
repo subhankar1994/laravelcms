@@ -19,6 +19,7 @@ Route::group(['namespace' => 'Admin', 'middleware' => 'auth:admin'], function(){
 	//admin user route
 	Route::resource('admin/user', 'UserController');
 	Route::resource('admin/page', 'PageController');
+	Route::resource('admin/media', 'MediaController');
 
 	//admin dashboard route
 	Route::get('admin/dashboard', function () {
